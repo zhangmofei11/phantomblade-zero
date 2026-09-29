@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beginner Guide - Phantom Blade Zero Wiki</title>
+    <meta name="description" content="Phantom Blade Zero beginner guide. Getting started tips, character creation, difficulty selection, and early game advice for new players.">
+    <meta name="keywords" content="Phantom Blade Zero beginner guide, Phantom Blade Zero tips, Phantom Blade Zero getting started, Phantom Blade Zero new player">
+    <link rel="canonical" href="https://phantomblade-zero.wiki/beginner.html">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        pb: { 500: '#DC2626', 600: '#B91C1C', 700: '#991B1B' },
+                        dark: { 900: '#0a0a0a', 800: '#141414', 700: '#1f1f1f' }
+                    },
+                    fontFamily: {
+                        'cinzel': ['Cinzel', 'serif'],
+                        'inter': ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { background: linear-gradient(180deg, #0a0a0a 0%, #141414 50%, #0a0a0a 100%); min-height: 100vh; }
+        .card-hover { transition: all 0.3s ease; }
+        .card-hover:hover { transform: translateY(-4px); box-shadow: 0 10px 40px rgba(220, 38, 38, 0.3); }
+    </style>
+</head>
+<body class="font-inter text-gray-100">
+    <header class="bg-dark-900/80 backdrop-blur-md border-b border-gray-800 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <a href="/" class="flex items-center space-x-3">
+                    <div class="w-10 h-10 bg-gradient-to-br from-pb-500 to-pb-700 rounded-lg flex items-center justify-center">
+                        <span class="font-cinzel font-bold text-white text-lg">PB</span>
+                    </div>
+                    <span class="font-cinzel font-bold text-xl text-white hidden sm:block">Phantom Blade Zero</span>
+                </a>
+                <nav class="hidden md:flex items-center space-x-6">
+                    <a href="/" class="text-gray-300 hover:text-pb-500 transition-colors">Home</a>
+                    <a href="combat.html" class="text-gray-300 hover:text-pb-500 transition-colors">Combat</a>
+                    <a href="bosses.html" class="text-gray-300 hover:text-pb-500 transition-colors">Bosses</a>
+                    <a href="weapons.html" class="text-gray-300 hover:text-pb-500 transition-colors">Weapons</a>
+                    <a href="walkthrough.html" class="text-gray-300 hover:text-pb-500 transition-colors">Walkthrough</a>
+                    <a href="beginner.html" class="text-pb-500 hover:text-pb-400 transition-colors font-medium">Beginner</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="mb-8">
+            <h1 class="font-cinzel text-4xl font-bold text-white mb-4">Beginner Guide</h1>
+            <p class="text-gray-400">Everything new players need to know before starting Phantom Blade Zero.</p>
+        </div>
+
+        <!-- Quick Tips -->
+        <section class="mb-12">
+            <h2 class="font-cinzel text-2xl font-bold text-yellow-400 mb-6">Essential Tips</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="card-hover bg-dark-800/80 rounded-xl border border-gray-700 p-6">
+                    <h3 class="font-cinzel text-lg font-bold text-blue-400 mb-3">1. Parry, Don't Dodge</h3>
+                    <p class="text-gray-400 text-sm">New players spam dodge and get punished. Focus on learning parry timing first. Blue flash = parry.</p>
+                </div>
+                <div class="card-hover bg-dark-800/80 rounded-xl border border-gray-700 p-6">
+                    <h3 class="font-cinzel text-lg font-bold text-purple-400 mb-3">2. Ghoststep for Red Flash</h3>
+                    <p class="text-gray-400 text-sm">When you see red flash, dodge won't save you. Use Ghoststep (R1/E) to dash through unblockable attacks.</p>
+                </div>
+                <div class="card-hover bg-dark-800/80 rounded-xl border border-gray-700 p-6">
+                    <h3 class="font-cinzel text-lg font-bold text-red-400 mb-3">3. Don't Hoard Sha-Chi</h3>
+                    <p class="text-gray-400 text-sm">Sha-Chi decays over time. Build it up, then immediately spend on heavy attacks or special abilities.</p>
+                </div>
+                <div class="card-hover bg-dark-800/80 rounded-xl border border-gray-700 p-6">
+                    <h3 class="font-cinzel text-lg font-bold text-green-400 mb-3">4. Start on Normal</h3>
+                    <p class="text-gray-400 text-sm">Hard mode punishes mistakes severely. Learn the mechanics on Normal first, then switch to Hard.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Difficulty Selection -->
+        <section class="mb-12">
+            <h2 class="font-cinzel text-2xl font-bold text-white mb-6">Difficulty Modes</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div class="bg-dark-800/80 rounded-xl border border-green-500/30 p-6">
+                    <h3 class="font-cinzel text-lg font-bold text-green-400 mb-2">Story Mode</h3>
+                    <p class="text-gray-400 text-sm mb-3">For players focused on narrative. Minimal challenge.</p>
+                    <ul class="text-gray-500 text-xs space-y-1">
+                        <li>• 50% damage taken</li>
+                        <li>• Infinite healing items</li>
+                        <li>• Simplified combat</li>
+                    </ul>
+                </div>
+                <div class="bg-dark-800/80 rounded-xl border border-yellow-500/30 p-6">
+                    <h3 class="font-cinzel text-lg font-bold text-yellow-400 mb-2">Normal Mode</h3>
+                    <p class="text-gray-400 text-sm mb-3">Recommended for most players. Balanced challenge.</p>
+                    <ul class="text-gray-500 text-xs space-y-1">
+                        <li>• Standard damage</li>
+                        <li>• Limited healing</li>
+                        <li>• Full combat depth</li>
+                    </ul>
+                </div>
+                <div class="bg-dark-800/80 rounded-xl border border-red-500/30 p-6">
+                    <h3 class="font-cinzel text-lg font-bold text-red-400 mb-2">Hard Mode</h3>
+                    <p class="text-gray-400 text-sm mb-3">For veterans seeking challenge. Significantly harder.</p>
+                    <ul class="text-gray-500 text-xs space-y-1">
+                        <li>• 150% damage taken</li>
+                        <li>• Limited healing</li>
+                        <li>• Bosses have new patterns</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Character Stats -->
+        <section class="mb-12">
+            <h2 class="font-cinzel text-2xl font-bold text-white mb-6">Character Stats</h2>
+            <div class="bg-dark-800/80 rounded-xl border border-gray-700 p-6">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                    <div>
+                        <h3 class="font-bold text-white mb-1">STR</h3>
+                        <p class="text-gray-500 text-xs">Increases heavy attack damage and posture break</p>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-white mb-1">SKI</h3>
+                        <p class="text-gray-500 text-xs">Increases attack speed and critical chance</p>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-white mb-1">ARC</h3>
+                        <p class="text-gray-500 text-xs">Increases Sha-Chi generation and capacity</p>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-white mb-1">END</h3>
+                        <p class="text-gray-500 text-xs">Increases stamina pool and resistance</p>
+                    </div>
+                </div>
+                <div class="mt-6 pt-6 border-t border-gray-700/50">
+                    <h4 class="font-bold text-gray-300 mb-2">Recommended Starting Build</h4>
+                    <p class="text-gray-400 text-sm">For beginners: <span class="text-green-400">Equal STR and SKI</span> with some END. This gives you good damage while maintaining stamina for parries.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Early Game Tips -->
+        <section class="mb-12">
+            <h2 class="font-cinzel text-2xl font-bold text-white mb-6">Early Game Advice</h2>
+            <div class="space-y-4">
+                <div class="bg-dark-800/80 rounded-xl border border-gray-700 p-6">
+                    <h3 class="font-cinzel text-lg font-bold text-yellow-400 mb-3">First 30 Minutes</h3>
+                    <ul class="text-gray-400 text-sm space-y-2">
+                        <li>• Complete the tutorial - it teaches core mechanics well</li>
+                        <li>• Choose Longsword as your first weapon - most forgiving</li>
+                        <li>• Don't skip the first boss - it teaches parry timing</li>
+                        <li>• Collect all Memory Fragments - they unlock lore and bonuses</li>
+                    </ul>
+                </div>
+
+                <div class="bg-dark-800/80 rounded-xl border border-gray-700 p-6">
+                    <h3 class="font-cinzel text-lg font-bold text-blue-400 mb-3">Resource Management</h3>
+                    <ul class="text-gray-400 text-sm space-y-2">
+                        <li>• Healing items are limited - use them strategically</li>
+                        <li>• Save often at shrines - they also restore health</li>
+                        <li>• Collect Jade Tablets - needed for weapon upgrades</li>
+                        <li>• Don't sell materials - you'll need them later</li>
+                    </ul>
+                </div>
+
+                <div class="bg-dark-800/80 rounded-xl border border-gray-700 p-6">
+                    <h3 class="font-cinzel text-lg font-bold text-purple-400 mb-3">Combat Practice</h3>
+                    <ul class="text-gray-400 text-sm space-y-2">
+                        <li>• Practice parry timing on regular enemies first</li>
+                        <li>• Learn to read enemy attack wind-ups</li>
+                        <li>• Focus on one enemy's attacks at a time in groups</li>
+                        <li>• Heavy attacks interrupt most enemy attacks</li>
+                    </ul>
+                </div>
+
+                <div class="bg-dark-800/80 rounded-xl border border-gray-700 p-6">
+                    <h3 class="font-cinzel text-lg font-bold text-red-400 mb-3">Common Beginner Mistakes</h3>
+                    <ul class="text-gray-400 text-sm space-y-2">
+                        <li>• Button mashing - Phantom Blade rewards deliberate play</li>
+                        <li>• Ignoring the blue flash - parry windows are generous</li>
+                        <li>• Rolling into attacks - Ghoststep is safer</li>
+                        <li>• Fighting exhausted - manage your stamina</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Controls Reminder -->
+        <section class="mb-12">
+            <h2 class="font-cinzel text-2xl font-bold text-white mb-6">Quick Controls Reference</h2>
+            <div class="bg-dark-800/80 rounded-xl border border-gray-700 p-6">
+                <div class="grid grid-cols-2 gap-4 text-sm">
+                    <div class="flex justify-between">
+                        <span class="text-gray-400">Light Attack</span>
+                        <span class="text-white">R2 / Left Click</span>
+                    </div>
+                    <div class="flex justify-between">
+                        <span class="text-gray-400">Heavy Attack</span>
+                        <span class="text-white">R2 + R1 / Right Click</span>
+                    </div>
+                    <div class="flex justify-between">
+                        <span class="text-gray-400">Parry</span>
+                        <span class="text-blue-400">L1 / Q</span>
+                    </div>
+                    <div class="flex justify-between">
+                        <span class="text-gray-400">Ghoststep</span>
+                        <span class="text-purple-400">R1 / E</span>
+                    </div>
+                    <div class="flex justify-between">
+                        <span class="text-gray-400">Heal</span>
+                        <span class="text-green-400">Touch Pad / H</span>
+                    </div>
+                    <div class="flex justify-between">
+                        <span class="text-gray-400">Lock On</span>
+                        <span class="text-white">R3 / Tab</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark-900 border-t border-gray-800 py-8 mt-12">
+        <div class="max-w-7xl mx-auto px-4 text-center text-gray-500 text-sm">
+            <p>&copy; 2026 Phantom Blade Zero Wiki. Not affiliated with S-Game.</p>
+        </div>
+    </footer>
+</body>
+</html>

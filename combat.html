@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combat Guide - Phantom Blade Zero Wiki</title>
+    <meta name="description" content="Master Phantom Blade Zero combat system. Parry, Ghoststep, Sha-Chi mechanics, combos, and tips for PS5 and PC.">
+    <meta name="keywords" content="Phantom Blade Zero combat guide, Phantom Blade Zero parry, Phantom Blade Zero ghoststep, Phantom Blade Zero sha-chi, Phantom Blade Zero combos">
+    <link rel="canonical" href="https://phantomblade-zero.wiki/combat.html">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        pb: { 500: '#DC2626', 600: '#B91C1C', 700: '#991B1B' },
+                        dark: { 900: '#0a0a0a', 800: '#141414', 700: '#1f1f1f' }
+                    },
+                    fontFamily: {
+                        'cinzel': ['Cinzel', 'serif'],
+                        'inter': ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { background: linear-gradient(180deg, #0a0a0a 0%, #141414 50%, #0a0a0a 100%); min-height: 100vh; }
+        .card-hover { transition: all 0.3s ease; }
+        .card-hover:hover { transform: translateY(-4px); box-shadow: 0 10px 40px rgba(220, 38, 38, 0.3); }
+    </style>
+</head>
+<body class="font-inter text-gray-100">
+    <header class="bg-dark-900/80 backdrop-blur-md border-b border-gray-800 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <a href="/" class="flex items-center space-x-3">
+                    <div class="w-10 h-10 bg-gradient-to-br from-pb-500 to-pb-700 rounded-lg flex items-center justify-center">
+                        <span class="font-cinzel font-bold text-white text-lg">PB</span>
+                    </div>
+                    <span class="font-cinzel font-bold text-xl text-white hidden sm:block">Phantom Blade Zero</span>
+                </a>
+                <nav class="hidden md:flex items-center space-x-6">
+                    <a href="/" class="text-gray-300 hover:text-pb-500 transition-colors">Home</a>
+                    <a href="combat.html" class="text-pb-500 hover:text-pb-400 transition-colors font-medium">Combat</a>
+                    <a href="bosses.html" class="text-gray-300 hover:text-pb-500 transition-colors">Bosses</a>
+                    <a href="weapons.html" class="text-gray-300 hover:text-pb-500 transition-colors">Weapons</a>
+                    <a href="walkthrough.html" class="text-gray-300 hover:text-pb-500 transition-colors">Walkthrough</a>
+                    <a href="beginner.html" class="text-gray-300 hover:text-pb-500 transition-colors">Beginner</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="mb-8">
+            <h1 class="font-cinzel text-4xl font-bold text-white mb-4">Combat Guide</h1>
+            <p class="text-gray-400">Master the art of the assassin with Phantom Blade Zero's deep combat system.</p>
+        </div>
+
+        <!-- Quick Reference -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-12">
+            <div class="bg-dark-800/80 rounded-xl border border-blue-500/30 p-4 text-center">
+                <div class="text-3xl mb-2">🛡️</div>
+                <div class="text-xl font-bold text-blue-400">Parry</div>
+                <div class="text-gray-400 text-sm">Blue Flash = L1 / Q</div>
+            </div>
+            <div class="bg-dark-800/80 rounded-xl border border-purple-500/30 p-4 text-center">
+                <div class="text-3xl mb-2">👻</div>
+                <div class="text-xl font-bold text-purple-400">Ghoststep</div>
+                <div class="text-gray-400 text-sm">Red Flash = R1 / E</div>
+            </div>
+            <div class="bg-dark-800/80 rounded-xl border border-red-500/30 p-4 text-center">
+                <div class="text-3xl mb-2">⚔️</div>
+                <div class="text-xl font-bold text-red-400">Sha-Chi</div>
+                <div class="text-gray-400 text-sm">Heavy Attacks</div>
+            </div>
+        </div>
+
+        <!-- Parry System -->
+        <section class="mb-12">
+            <h2 class="font-cinzel text-2xl font-bold text-blue-400 mb-6">Parry System</h2>
+            <div class="bg-dark-800/80 rounded-xl border border-gray-700 p-6">
+                <p class="text-gray-300 mb-4">The core defensive mechanic in Phantom Blade Zero. When you see a <span class="text-blue-400 font-bold">blue flash</span> before an enemy's attack lands, that's your window to parry.</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <h3 class="font-cinzel text-lg font-bold text-white mb-2">How to Parry</h3>
+                        <ul class="text-gray-400 text-sm space-y-2">
+                            <li>• Watch for the blue flash indicator</li>
+                            <li>• Press L1 (PS5) or Q (PC) just before impact</li>
+                            <li>• Successful parry staggers the enemy</li>
+                            <li>• Perfect timing creates a larger window</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="font-cinzel text-lg font-bold text-white mb-2">Benefits</h3>
+                        <ul class="text-gray-400 text-sm space-y-2">
+                            <li>• Deals posture damage to enemies</li>
+                            <li>• Creates opening for counterattacks</li>
+                            <li>• Builds Sha-Chi meter</li>
+                            <li>• Most efficient way to fight</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Ghoststep System -->
+        <section class="mb-12">
+            <h2 class="font-cinzel text-2xl font-bold text-purple-400 mb-6">Ghoststep System</h2>
+            <div class="bg-dark-800/80 rounded-xl border border-gray-700 p-6">
+                <p class="text-gray-300 mb-4">When you see a <span class="text-purple-400 font-bold">red flash</span>, use Ghoststep instead of parrying. This dash through attacks cannot be parried.</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <h3 class="font-cinzel text-lg font-bold text-white mb-2">How to Ghoststep</h3>
+                        <ul class="text-gray-400 text-sm space-y-2">
+                            <li>• Press R1 (PS5) or E (PC) + direction</li>
+                            <li>• Dashes through the attack</li>
+                            <li>• Brief invincibility during dash</li>
+                            <li>• Ends behind the enemy</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="font-cinzel text-lg font-bold text-white mb-2">Tactical Uses</h3>
+                        <ul class="text-gray-400 text-sm space-y-2">
+                            <li>• Avoid unblockable attacks</li>
+                            <li>• Reposition behind enemies</li>
+                            <li>• Escape crowd situations</li>
+                            <li>• Chain into counterattacks</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sha-Chi System -->
+        <section class="mb-12">
+            <h2 class="font-cinzel text-2xl font-bold text-red-400 mb-6">Sha-Chi System</h2>
+            <div class="bg-dark-800/80 rounded-xl border border-gray-700 p-6">
+                <p class="text-gray-300 mb-4">Sha-Chi is Phantom Blade Zero's resource system. Build it with light attacks, spend it on devastating heavy attacks.</p>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div>
+                        <h3 class="font-cinzel text-lg font-bold text-white mb-2">Building Sha-Chi</h3>
+                        <ul class="text-gray-400 text-sm space-y-2">
+                            <li>• Light attack combos</li>
+                            <li>• Successful parries</li>
+                            <li>• Perfect dodges</li>
+                            <li>• Breaking enemy posture</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="font-cinzel text-lg font-bold text-white mb-2">Spending Sha-Chi</h3>
+                        <ul class="text-gray-400 text-sm space-y-2">
+                            <li>• Heavy attacks cost 1-2 bars</li>
+                            <li>• Special abilities cost 2-3 bars</li>
+                            <li>• Ultimate attack costs full bar</li>
+                            <li>• Sha-Chi decays over time</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="font-cinzel text-lg font-bold text-white mb-2">Maximize Damage</h3>
+                        <ul class="text-gray-400 text-sm space-y-2">
+                            <li>• Build then immediately spend</li>
+                            <li>• Combo: Parry → Heavy → Special</li>
+                            <li>• Ultimate at full bar for max DPS</li>
+                            <li>• Don't let it decay!</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Combo Guide -->
+        <section class="mb-12">
+            <h2 class="font-cinzel text-2xl font-bold text-white mb-6">Basic Combos</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="card-hover bg-dark-800/80 rounded-xl border border-gray-700 p-6">
+                    <h3 class="font-cinzel text-lg font-bold text-green-400 mb-3">Starter Combo</h3>
+                    <p class="text-gray-400 text-sm mb-2">Light → Light → Light → Heavy</p>
+                    <p class="text-gray-500 text-xs">Safe opening combo. Ends with knockdown.</p>
+                </div>
+                <div class="card-hover bg-dark-800/80 rounded-xl border border-gray-700 p-6">
+                    <h3 class="font-cinzel text-lg font-bold text-blue-400 mb-3">Parry Counter</h3>
+                    <p class="text-gray-400 text-sm mb-2">Parry → Heavy → Light → Ghoststep</p>
+                    <p class="text-gray-500 text-xs">High damage from parry opening.</p>
+                </div>
+                <div class="card-hover bg-dark-800/80 rounded-xl border border-gray-700 p-6">
+                    <h3 class="font-cinzel text-lg font-bold text-red-400 mb-3">Sha-Chi Burst</h3>
+                    <p class="text-gray-400 text-sm mb-2">Build 3 bars → Heavy × 3 → Ultimate</p>
+                    <p class="text-gray-500 text-xs">Maximum damage combo.</p>
+                </div>
+                <div class="card-hover bg-dark-800/80 rounded-xl border border-gray-700 p-6">
+                    <h3 class="font-cinzel text-lg font-bold text-purple-400 mb-3">Ghoststep Mixup</h3>
+                    <p class="text-gray-400 text-sm mb-2">Ghoststep → Backstab → Heavy</p>
+                    <p class="text-gray-500 text-xs">Positional advantage combo.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Controls -->
+        <section class="mb-12">
+            <h2 class="font-cinzel text-2xl font-bold text-white mb-6">Control Reference</h2>
+            <div class="bg-dark-800/80 rounded-xl border border-gray-700 p-6 overflow-x-auto">
+                <table class="w-full text-sm">
+                    <thead>
+                        <tr class="text-gray-400 border-b border-gray-700">
+                            <th class="text-left py-2">Action</th>
+                            <th class="text-left py-2">PS5</th>
+                            <th class="text-left py-2">PC</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-gray-300">
+                        <tr class="border-b border-gray-700/50">
+                            <td class="py-2">Light Attack</td>
+                            <td class="text-pb-400">R2</td>
+                            <td class="text-pb-400">Left Click</td>
+                        </tr>
+                        <tr class="border-b border-gray-700/50">
+                            <td class="py-2">Heavy Attack</td>
+                            <td class="text-pb-400">R2 + R1</td>
+                            <td class="text-pb-400">Right Click</td>
+                        </tr>
+                        <tr class="border-b border-gray-700/50">
+                            <td class="py-2">Parry</td>
+                            <td class="text-blue-400">L1</td>
+                            <td class="text-blue-400">Q</td>
+                        </tr>
+                        <tr class="border-b border-gray-700/50">
+                            <td class="py-2">Ghoststep</td>
+                            <td class="text-purple-400">R1</td>
+                            <td class="text-purple-400">E</td>
+                        </tr>
+                        <tr class="border-b border-gray-700/50">
+                            <td class="py-2">Special Attack</td>
+                            <td class="text-red-400">R1 + R2</td>
+                            <td class="text-red-400">F</td>
+                        </tr>
+                        <tr>
+                            <td class="py-2">Ultimate</td>
+                            <td class="text-yellow-400">L1 + R1</td>
+                            <td class="text-yellow-400">R</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark-900 border-t border-gray-800 py-8 mt-12">
+        <div class="max-w-7xl mx-auto px-4 text-center text-gray-500 text-sm">
+            <p>&copy; 2026 Phantom Blade Zero Wiki. Not affiliated with S-Game.</p>
+        </div>
+    </footer>
+</body>
+</html>
