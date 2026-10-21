@@ -1,6 +1,6 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "phantomblade-zero-wiki",
+  "name": "phantomblade-zero",
   "compatibility_date": "2026-09-21",
   "observability": {
     "enabled": true
